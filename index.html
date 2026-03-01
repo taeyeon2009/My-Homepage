@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="nav-container">
@@ -97,14 +99,22 @@
 
         <section class="routine-section" id="routine">
             <div class="routine-container">
-                <h2>1일 1문장</h2>
-                <blockquote class="quote">
-                    "비교를 멈추면 행복이 시작된다."
-                </blockquote>
-                <p>프리미엄 주간 점검표 다운로드</p>
-                <div class="download-buttons">
-                    <button class="btn btn-outline">감정 점검표 PDF</button>
-                    <button class="btn btn-outline">자산 점검표 PDF</button>
+                <div class="daily-quote-box">
+                    <span class="quote-label">1일 1문장</span>
+                    <blockquote class="quote">
+                        "비교를 멈추면 행복이 시작된다."
+                    </blockquote>
+                    <p class="quote-author">- 행복을 가꾸는 사람</p>
+                </div>
+
+                <div class="checklist-area">
+                    <h3>🎁 프리미엄 주간 점검표 무료 다운로드</h3>
+                    <p class="checklist-desc">한 주를 돌아보고 마음과 자산을 단단하게 다지는 체크리스트입니다. 출력해서 다이어리에 붙여보세요.</p>
+                    <div class="download-buttons">
+                        <button class="btn btn-outline"><i class="fas fa-heart"></i> 감정 점검표 PDF</button>
+                        <button class="btn btn-outline"><i class="fas fa-chart-line"></i> 자산 점검표 PDF</button>
+                        <button class="btn btn-outline"><i class="fas fa-comments"></i> 가족 대화 점검표 PDF</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -118,4 +128,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

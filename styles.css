@@ -1,20 +1,27 @@
 :root {
     /* Warm & Cosy Color Palette */
-    --bg-color: #FDFBF7; /* Warm off-white */
-    --text-primary: #2D2A26; /* Soft black/dark brown */
-    --text-secondary: #6B655F; /* Warm gray */
-    
+    --bg-color: #FDFBF7;
+    /* Warm off-white */
+    --text-primary: #2D2A26;
+    /* Soft black/dark brown */
+    --text-secondary: #6B655F;
+    /* Warm gray */
+
     /* Document Colors Adapted to Warmth */
-    --deep-green: #2C4A3B; /* Deep forest green */
-    --light-green: #E8F0EA; /* Soft minty warm green */
-    --navy: #2A364F; /* Softened navy */
-    --accent-warm: #E2A76F; /* Soft warm orange/peach for highlights */
-    
+    --deep-green: #2C4A3B;
+    /* Deep forest green */
+    --light-green: #E8F0EA;
+    /* Soft minty warm green */
+    --navy: #2A364F;
+    /* Softened navy */
+    --accent-warm: #E2A76F;
+    /* Soft warm orange/peach for highlights */
+
     --card-bg: #FFFFFF;
     --border-radius: 20px;
     --shadow-soft: 0 10px 30px rgba(44, 74, 59, 0.08);
     --shadow-hover: 0 15px 40px rgba(44, 74, 59, 0.15);
-    
+
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -178,6 +185,7 @@ body {
     border-radius: 50px;
     transition: var(--transition);
 }
+
 .btn-outline:hover {
     background: var(--deep-green);
     color: white;
@@ -215,8 +223,13 @@ main {
     flex-direction: column;
 }
 
-.card:nth-child(2) { border-top-color: var(--deep-green); }
-.card:nth-child(3) { border-top-color: var(--navy); }
+.card:nth-child(2) {
+    border-top-color: var(--deep-green);
+}
+
+.card:nth-child(3) {
+    border-top-color: var(--navy);
+}
 
 .card:hover {
     transform: translateY(-10px);
@@ -344,45 +357,87 @@ main {
     left: -10%;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, rgba(226,167,111,0.2) 0%, rgba(255,255,255,0) 70%);
+    background: radial-gradient(circle, rgba(226, 167, 111, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
     border-radius: 50%;
 }
 
-.routine-container h2 {
-    color: var(--accent-warm);
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.daily-quote-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    margin-bottom: 4rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.quote-label {
+    display: inline-block;
+    background: var(--accent-warm);
+    color: var(--navy);
+    font-weight: 700;
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
 }
 
 .quote {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 300;
     font-style: italic;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     line-height: 1.4;
+    color: white;
 }
 
-.routine-container p {
-    color: rgba(255,255,255,0.8);
-    margin-bottom: 1.5rem;
+.quote-author {
+    font-size: 1.1rem;
+    color: var(--accent-warm);
+    opacity: 0.9;
+}
+
+.checklist-area {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    position: relative;
+    z-index: 1;
+}
+
+.checklist-area h3 {
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.checklist-desc {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
 }
 
 .download-buttons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
 .download-buttons .btn-outline {
-    border-color: rgba(255,255,255,0.3);
+    border-color: rgba(255, 255, 255, 0.3);
     color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .download-buttons .btn-outline:hover {
     background: white;
     color: var(--navy);
+    border-color: white;
 }
 
 /* Footer */
@@ -411,6 +466,7 @@ footer {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -422,20 +478,21 @@ footer {
     .nav-links {
         display: none;
     }
-    
+
     .hero h1 {
         font-size: 2.5rem;
     }
-    
-    .feature-row, .feature-row.reverse {
+
+    .feature-row,
+    .feature-row.reverse {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .mini-card:hover {
         transform: translateY(-5px);
     }
-    
+
     .quote {
         font-size: 1.8rem;
     }
